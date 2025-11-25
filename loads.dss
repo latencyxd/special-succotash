@@ -1,0 +1,9 @@
+
+
+! Cargas Residenciais (50 kVA por ponto)
+New Load.Carga_B2 Bus1=Bus2 Phases=3 Conn=Wye kV=13.8 kW=40 kvar=15 Daily=Residencial
+New Load.Carga_B3 Bus1=Bus3 Phases=3 Conn=Wye kV=13.8 kW=40 kvar=15 Daily=Residencial
+New Load.Carga_B4 Bus1=Bus4 Phases=3 Conn=Wye kV=13.8 kW=40 kvar=15 Daily=Residencial
+
+! Carga de Irrigação (Motor de Alta Potência - 150 kVA)
+New Load.Irrigacao_B5 Bus1=Bus5 Phases=3 Conn=Wye kV=13.8 kW=120 kvar=50 Daily=Irrigacao

@@ -1,0 +1,29 @@
+Clear
+Set DefaultBaseFrequency=60
+
+! 1. Definicao do Circuito e Fonte
+Redirect Circuit.dss
+
+! 2. Definicao dos Condutores e Linhas
+Redirect LineCodes.dss
+Redirect Lines.dss
+
+! 3. Definicao das Curvas de Carga e Cargas
+Redirect LoadShapes.dss
+Redirect Loads.dss
+
+! 4. Definicao do PVSystem e Storage
+Redirect PVSystem.dss
+Redirect Storage.dss
+
+! 5. Configuracao da Simulacao e Solucao
+Set Mode=Daily Number=1 StepSize=1h
+Set ControlMode=Time
+Set MaxIterations=20
+
+Solve
+
+
+! Show Voltages LN Nodes
+! Show Losses
+! Plot Profile

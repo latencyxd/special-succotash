@@ -1,0 +1,7 @@
+! Definição do Storage System (Armazenamento de Energia)
+! Localizado na Bus 4 (50 kW / 200 kWh)
+
+New Storage.Storage_B4 Bus1=Bus4 Phases=3 kV=13.8 kWRated=50 kWhRated=200 %EffCharge=95 %EffDischarge=95
+
+! Controlador de Storage para Suporte de Tensão
+New StorageController.Control_B4 Storage=Storage_B4 Mode=Voltage Vreg=1.03 Band=0.02
